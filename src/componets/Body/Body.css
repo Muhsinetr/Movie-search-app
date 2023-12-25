@@ -1,0 +1,106 @@
+main{
+    width: 100%;
+    min-height: 100dvh;
+    background: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .search-output-aria{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+main .search-output{
+    height: 240px;
+    width: 160px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0px 0px 15px 5px #403f3f;
+}
+.container{
+    height: 240px;
+    width: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    perspective: 500px;
+    
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 15px 5px #403f3f;
+    background-color: var( --movie-dev-bg);
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
+}
+
+.front,.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    font-family: sans-serif;
+}
+.front{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.back{
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+}
+.back h4{
+    color: rgb(197, 197, 199);
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.back div{
+    height: 85%;
+    overflow: auto;
+    color: var(--movie-dev-cl);
+    scroll-timeline: none;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+/* {body
+    background: rgb(255 246 246 / 56%);
+    serach input
+    background-color: #3c3535;
+    movie div
+    ackground-color: #7f7979;
+    color: #e7e7eb;
+    footer
+        background-color: white;
+        selector
+        background-color: #E91E63;
+
+    main form
+        background-color: #4a4b59;
+        color: white;
+
+
+} */

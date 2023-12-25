@@ -1,0 +1,125 @@
+header{
+    height: 200px;
+    background: var( --main-bg);
+    /* background-image: url(../../images/icon-park-solid_movie.png); */
+}
+header .First-row{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: space-between;
+}
+.icon-wraper{
+    display: flex;
+}
+.header-icon{
+    background-image: url(../../images/icon-park-solid_movie.png);
+    height: 48px;
+    aspect-ratio: 1;
+    background-size:contain;
+    margin-right: 10px;
+}
+.header-name{
+    background-image: url(/src/images/Figflix.png);
+    height: 48px;
+    width: 200px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.btn-wrap{
+    display: flex;
+    gap: 10px;
+    margin-right: 75px;
+}
+.log-btn{
+    background-color: white;
+    display: flex;
+    width: 120px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: system-ui;
+    font-size: 16px;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+.log-btn-icon{
+    background-image: url(/src/images/iconoir_profile-circle.png);
+    height: 25px;
+    background-size: contain;
+    aspect-ratio: 1;
+}
+.sun-icon{
+    background-image: var(--theme-icon);
+    background-color: var(--theme-bg);
+    height: 50px;
+    aspect-ratio: 1;
+    background-size: cover;
+    color: none;
+    border-radius: 50%;
+}
+header .Secont-row{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-input{
+    height: 45px;
+    width: 60%;
+    border-radius: 20px;
+    padding: 15px 200px 15px 15px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    margin-top: -25px;
+    background-color: var(--search-input);
+}
+
+/* media */
+@media (max-width: 550px){
+    .header-icon{
+        height: 35px;
+    }
+    .header-name{
+    height: 35px;
+    width: 150px;
+    }
+    .sun-icon{
+        height: 35px;
+    }
+    .search-input{
+        height: 35px;
+        width: 75%;
+        padding: 5px;
+        margin-top:10px ;
+    }
+    .log-btn{
+        height: 35px;
+        width: 95px;
+        font-size: 12px;
+    }
+    .log-btn-icon{
+        height: 15px;
+        gap: 1px;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: normal;
+    }
+} 
+
+@media (max-width: 450px){
+    .First-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}

@@ -1,0 +1,75 @@
+main form{
+    height: 550px;
+    width: 450px;
+    background-color: var(--main-form-bg);
+    display: flex;
+    justify-content: center;
+}
+main .form-feilds{
+    height: 336px;
+    width: 314px;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+.form-feilds h1{
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.Form-text-input{
+    height: 50px;
+    border-radius: 4px;
+    background-color: #333;
+    padding: 15px 20px;   
+    font-size: 16px;
+    color: #8C8C8C;
+    outline: none;
+    border: none;
+    margin-bottom:14px;
+    width: 100%;
+}
+.form-feilds button{
+    margin-top: 28px;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #E50914;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.55);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+.form-feilds div{
+    display: flex;
+    justify-content: right;
+}
+.form-feilds div a{
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-top: 14px;
+    color: #B3B3B3;
+    font-size: 13px;
+    text-align: right;
+}
+.form-feilds p{
+    color: #737373;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-top:145px;
+}
+.form-feilds p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media(max-width:500px){
+    main form{
+        width: 375px;
+    }
+}

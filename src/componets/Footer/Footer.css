@@ -1,0 +1,82 @@
+footer{
+    min-height: 280px;
+    width: 100%;
+    background-color:var(--footer-bg);
+    display: flex;
+    justify-content: center;
+}
+.footer-container{
+    min-height: 230px;
+    width: 70%;
+}
+.contact-number{
+    height: 78px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact-number p{
+    color: #757575;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.FAQ-social-continer{
+    min-height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.FAQ-continer{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 30px;
+
+}
+.FAQ-continer a{
+    margin-right: 40px;
+    color:#757575;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.FAQ-continer li{
+    margin-bottom: 10px;
+}
+.social-continer{
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+}
+.social-continer div{
+    height: 24px;
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
+}
+.social-continer div:nth-child(1){
+    background-image: url(../../images/iconfacebook.png);
+}
+.social-continer div:nth-child(4){
+    background-image: url(../../images/iconYoutube.png);
+}
+.social-continer div:nth-child(3){
+    background-image: url(../../images/iconInstagram.png);
+}
+.social-continer div:nth-child(2){
+    background-image: url(../../images/iconXapp.png);
+}
+.language-div select{
+    height: 48px;
+    width: 120px;
+    font-size: 13px;
+    color: #757575;
+    background-color: var( --footer-select-bg);
+    border-radius: 2px; 
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

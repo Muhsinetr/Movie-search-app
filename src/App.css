@@ -1,0 +1,26 @@
+:root{
+    --main-bg : rgb(0 0 0 / 85%);
+    --search-input : white;
+    --movie-dev-bg : black;
+    --movie-dev-cl : white;
+    --footer-bg : black;
+    --footer-select-bg : black;
+    --main-form-bg: black;
+    --theme-icon : url(/src/images/sunIcon.png);
+    --theme-bg : white;
+}
+[data-theme = "dark"]{
+    --main-bg :rgb(255 246 246 / 56%);
+    --search-input : #3c3535;
+    --movie-dev-bg : #7f7979;
+    --movie-dev-cl : #e7e7eb;
+    --footer-bg : white;
+    --footer-select-bg : #E91E63;
+    --main-form-bg :#4a4b59;
+    --theme-icon :url(/src/images/night.png);
+    --theme-bg : rgb(80, 78, 78);
+}
+.Full-canvas{
+    background-image: url(./images/Moviebackground.jpg);
+    min-height: 100dvh;
+}
